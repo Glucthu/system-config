@@ -1,0 +1,59 @@
+default partial alphanumeric_keys modifier_keys
+xkb_symbols "basic" {
+
+	name[Group1]= "Cataglyphis (ES)";
+
+//	key		default	shift	alt	alt/shift
+	key <TLDE> {[	U007E,	U00B0,	U00BA,	U00AA	]};	// ~ °
+	key <AE01> {[	U0031,	U0021			]};	// 1 !
+	key <AE02> {[	U0032,	U0022			]};	// 2 "
+	key <AE03> {[ 	U0033,	U0023			]};	// 3 #
+	key <AE04> {[ 	U0034,	U0024			]};	// 4 $
+	key <AE05> {[ 	U0035,	U0025			]};	// 5 %
+	key <AE06> {[ 	U0036,	U0026			]};	// 6 &
+	key <AE07> {[ 	U0037,	U002F			]};	// 7 /
+	key <AE08> {[ 	U0038,	U0028			]};	// 8 (
+	key <AE09> {[ 	U0039,	U0029			]};	// 9 )
+	key <AE10> {[ 	U0030,	U003D			]};	// 0 =
+	key <AE11> {[	U00A1,	U00BF			]};	// ¡ ¿
+	key <AE12> {[	U002A,	U003F			]};	// * ?
+
+	key <AD01> {[	U0067,	U0047			]};	// g G
+	key <AD02> {[	U0062,	U0042			]};	// b B
+	key <AD03> {[	U0070,	U0050			]};	// p P
+	key <AD04> {[	U0074,	U0054			]};	// t T
+	key <AD05> {[	U006D,	U004D			]};	// m M
+	key <AD06> {[	U0068,	U0048			]};	// h H
+	key <AD07> {[	U0079,	U0059			]};	// y Y
+	key <AD08> {[	U0071,	U0051			]};	// q Q
+	key <AD09> {[	U0066,	U0046			]};	// f F
+	key <AD10> {[	U006A,	U004A			]};	// j J
+	key <AD11> {[	U00B4,	U0027			]};	// ´ '
+	key <AD12> {[	U002D,	U005F			]};	// - _
+
+	key <AC01> {[	U0075,	U0055			]};	// u U
+	key <AC02> {[	U0069,	U0049			]};	// i I
+	key <AC03> {[	U006F,	U004F			]};	// o O
+	key <AC04> {[	U0065,	U0045			]};	// e E
+	key <AC05> {[	U0061,	U0041			]};	// a A
+	key <AC06> {[	U0072,	U0052			]};	// r R
+	key <AC07> {[	U0073,	U0053			]};	// s S
+	key <AC08> {[	U006E,	U004E			]};	// n N
+	key <AC09> {[	U006C,	U004C			]};	// l L
+	key <AC10> {[	U0064,	U0044			]};	// d D
+	key <AC11> {[   U002C,  U003B                   ]};     // , ;
+	key <AC12> {[	U002E,	U003A			]};	// . :
+
+	key <AB01> {[	U007A,	U005A			]};	// z Z
+	key <AB02> {[	U0078,	U0058			]};	// x X
+	key <AB03> {[	U0063,	U0043			]};	// c C
+	key <AB04> {[	U0076,	U0056			]};	// v V
+	key <AB05> {[	U006B,	U004B			]}; 	// k K
+	key <AB06> {[	U0077,	U0057			]};	// w W
+	key <AB07> {[	U00F1,	U00D1			]};	// ñ Ñ
+	key <AB08> {[	U007B,	U005B			]};	// { [
+	key <AB09> {[	U007D,	U005D			]};	// } ]
+	key <AB10> {[]};	//
+
+	key <BKSL> {[	U007F				]};	//
+};
