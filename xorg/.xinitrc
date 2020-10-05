@@ -40,6 +40,10 @@ setxkbmap dvorak &
 
 picom -f &
 
+# wallpaper
+
+feh --bg-scale ~/home/Images/background.png
+
 # execute window manager
 
 dwmstatus 2>&1 >/dev/null &
