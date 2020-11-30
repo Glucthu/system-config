@@ -9,6 +9,7 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 
 if [ -f $sysresources ]; then
     xrdb -merge $sysresources
+
 fi
 
 if [ -f $sysmodmap ]; then
@@ -17,6 +18,7 @@ fi
 
 if [ -f "$userresources" ]; then
     xrdb -merge "$userresources"
+
 fi
 
 if [ -f "$usermodmap" ]; then
@@ -36,15 +38,10 @@ fi
 
 setxkbmap dvorak &
 
-# compositor 
+# compositor
 
 picom -f &
 
-# wallpaper
+# init window manager
 
-feh --bg-scale ~/home/Images/background.png
-
-# execute window manager
-
-dwmstatus 2>&1 >/dev/null &
 exec dwm

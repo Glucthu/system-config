@@ -169,16 +169,6 @@ readfile(char *base, char *file)
 	return smprintf("%s", line);
 }
 
-/*char
-*get_totalspace(){
-	return (smprintf("%.0f", data.f_blocks));
-}
-
-char
-*get_usedspace(){
-        return (smprintf("%.0f", (data.f_blocks - data.f_bfree) * data.f_frsize));
-}*/
-
 char *get_freespace(char *mntpt){
     struct statvfs data;
     double total, used = 0;
@@ -195,8 +185,6 @@ char *get_freespace(char *mntpt){
 int
 main(void)
 {
-	//char *usedspace;
-	//char *totalspace;
 	char *rootfs;
 	char *status;
 	char *tmar;
@@ -210,14 +198,12 @@ main(void)
 
 	parse_netdev(&rec, &sent);
 	for (;;sleep(3)) {
-		tmar = mktimes("%H:%M", tzargentina);
+		tmar = mktimes("%a %d %b %Y %H:%M", tzargentina);
 		netstats = get_netusage(&rec, &sent);
-		//usedspace = get_usedspace();
-        	//totalspace = get_totalspace();
 		rootfs = get_freespace("/");
 
 		status = smprintf("%s | %s | %s" ,
-				tmar, netstats, rootfs);
+				netstats, rootfs, tmar);
 		setstatus(status);
 
 		free(tmar);
